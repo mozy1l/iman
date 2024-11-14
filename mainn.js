@@ -8,21 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Controleer of de pagina al eerder geladen is in deze sessie
-    if (!sessionStorage.getItem("loaded")) {
-        // Markeer de pagina als geladen in deze sessie
-        sessionStorage.setItem("loaded", "true");
-        
-        // Wacht bijvoorbeeld 14 seconden (14000 milliseconden) en redirect naar FLORES.html
-        setTimeout(() => {
-            window.location.href = "FLORES.html";
-        }, 14000); // Pas de tijd aan zoals gewenst
-    } else {
-        // Als de pagina al is geladen, stuur naar index.html
-        window.location.href = "index.html";
-    }
-});
 
 
   // Try automatically playing our audio via script. This would normally trigger and error.
